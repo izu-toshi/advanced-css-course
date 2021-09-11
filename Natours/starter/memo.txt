@@ -14,6 +14,11 @@ npm install node-sass --save-dev
 installしたライブラリがpackage.jsonに反映され、
 node_modulesフォルダが作成され、インストールされたファイル群が作られる。
 
-以下を実行すると、package.jsonのcompile:sassの「 "node-sass sass/main.scss css/style.css"」が実行される。
+以下を実行すると、package.jsonのcompile:sassの「 "node-sass sass/main.scss css/style.css -w"」が実行される。
+-wはKeep watchingすること
 npm run compile:sass
 >>sassからstyle.cssが作成される。
+
+#以下live serverをグローバルパッケージにインストールする。ことで、常にSass compilerを実行してくれる。
+-gでインストールしたので、node_modulesでなく
+npm install live-server -g
