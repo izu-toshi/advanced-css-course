@@ -1,0 +1,19 @@
+# session 27
+
+#nodeがはいっているか確認
+node -v
+
+#npm packageを作成する環境を作成
+npm init
+
+>>package.jsonが作成される
+
+#sass compilerをインストール
+npm install node-sass --save-dev
+
+installしたライブラリがpackage.jsonに反映され、
+node_modulesフォルダが作成され、インストールされたファイル群が作られる。
+
+以下を実行すると、package.jsonのcompile:sassの「 "node-sass sass/main.scss css/style.css"」が実行される。
+npm run compile:sass
+>>sassからstyle.cssが作成される。
