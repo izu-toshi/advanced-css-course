@@ -1,0 +1,5 @@
+#package.jsonに従い、npm packageをインストール
+npm install 
+
+live server sass complilerを起動
+npm run compile:sass
